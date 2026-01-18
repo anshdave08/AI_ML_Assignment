@@ -1,0 +1,36 @@
+1. Self-Rating on LLM, Deep Learning, AI, and ML
+  Based on my current understanding of concepts and the project experience of the above concepts. I would rate myself are as following:
+  Machine Learning – A
+    I am comfortable working independently with machine learning workflows. I have experience handling data cleaning, feature selection, model training, evaluation, and visualization. I can take a problem statement and build a working ML solution end-to-end without external help.
+  Artificial Intelligence – B
+    I understand the broader idea of AI systems and how different techniques like learning, reasoning, and decision-making come together. While I can apply AI concepts in practical scenarios, I usually refer to documentation or examples when working on more complex AI architectures.
+  Deep Learning – B
+    I have hands-on exposure to neural networks and understand how models like CNNs and RNNs work at a conceptual level. I can implement deep learning models using existing frameworks, but I am still developing confidence in designing architectures and tuning them completely on my own.
+  Large Language Models (LLMs) – B
+    I understand how LLMs function at a high level, including embeddings, transformers, and prompt-based interaction. I can build applications using LLM APIs and integrate them into systems, but I am still learning advanced topics such as fine-tuning and optimization.
+    `All my college projects are based on these concepts, so I have confidence in the above topics.
+
+
+2. High-Level Architecture of an LLM-Based Chatbot
+  I see an LLM based chatbot as a pipeline rather than a single model.
+  Process starts with a user interface, where the user enters the question. This input is sent to the backend service, which is responsible for managing requests, user sessions and validation. Before sending the input to model, backend applies the prompt generation. This is important because raw input is not sufficient. Its may add instructions, conversation history or relevant context to guide the LLM. its processes the prompt and generates a response based on learning patterns and abilities. The system may include a memory layer, which help maintain conversation continuity knowledge. After generates the output, a post processing step ensues the response is formatted, filtered before shown to user.
+
+  Overall flow is 
+  User input -> backend -> prompt preparation -> LLM -> response handling -> output
+
+
+
+
+
+3. Vector Databases and Database Selection
+  A vector database is used to store numerical representations (vectors) of data instead of raw text or structured records. These vectors capture the semantic meaning of data, which allows systems to find similar content even when the exact words do not match. This is especially useful in applications involving natural language, where similarity matters more than exact matching.
+  My reasoning is:
+  It is lightweight and open-source
+  Works well for local or small-scale deployments
+  Offers fast similarity search
+  Integrates easily with Python-based ML workflows
+
+
+
+
+
